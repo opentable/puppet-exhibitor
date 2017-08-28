@@ -7,7 +7,7 @@ PID_FILE=/var/run/$NAME.pid
 
 HOSTNAME=$(hostname -f)
 
-DAEMON="java -jar ${EXHIBITOR_HOME}/exhibitor-<%= @version %>-jar-with-dependencies.jar"
+DAEMON="java -jar ${EXHIBITOR_HOME}/exhibitor-<%= scope.lookupvar('::exhibitor::version') %>-jar-with-dependencies.jar"
 DAEMON_OPTS="--hostname ${HOSTNAME} ${EXHIBITOR_OPTS}"
 
 start() {
