@@ -1,12 +1,12 @@
 class exhibitor(
-  $version = $exhibitor::params::version,
-  $install_dir = $exhibitor::params::install_dir,
+  $conf_dir       = $exhibitor::params::conf_dir,
+  $install_dir    = $exhibitor::params::install_dir,
   $install_source = $exhibitor::params::install_source,
-  $conf_dir = $exhibitor::params::conf_dir,
-  $opts = $exhibitor::params::opts,
-  $properties = $exhibitor::params::properties,
-  $zk_data_dir = $exhibitor::params::zk_data_dir,
-  $zk_quorum = ''
+  $opts           = $exhibitor::params::opts,
+  $properties     = $exhibitor::params::properties,
+  $version        = $exhibitor::params::version,
+  $zk_data_dir    = $exhibitor::params::zk_data_dir,
+  $zk_quorum      = ''
 ) inherits exhibitor::params {
 
   class { 'exhibitor::install': } ->
