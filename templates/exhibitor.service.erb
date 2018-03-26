@@ -1,0 +1,14 @@
+[Unit]
+Description=Exhibitor
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/exhibitor
+ExecStart=/usr/bin/java -jar /opt/exhibitor/exhibitor-1.5.2-jar-with-dependencies.jar $EXHIBITOR_OPTS
+Restart=on-abort
+LimitNOFILE=16384
+
+[Install]
+WantedBy=multi-user.target

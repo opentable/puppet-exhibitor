@@ -6,6 +6,7 @@ class exhibitor(
   $properties     = $exhibitor::params::properties,
   $version        = $exhibitor::params::version,
   $zk_data_dir    = $exhibitor::params::zk_data_dir,
+  $zk_servers     = $exhibitor::params::zk_servers,
   $zk_quorum      = ''
 ) inherits exhibitor::params {
 
