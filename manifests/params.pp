@@ -15,8 +15,6 @@ class exhibitor::params {
 
   $zk_quorum = ['']
 
-  $zk_servers = undef
-
   $properties = {
     'com.netflix.exhibitor-rolling-hostnames-index'                           => '',
     'com.netflix.exhibitor-rolling-hostnames'                                 => '',
