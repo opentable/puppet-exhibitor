@@ -1,6 +1,5 @@
 class exhibitor::service(
   $install_dir = $exhibitor::install_dir,
-  $config_dir = $exhibitor::config_dir
 ) {
 
   if $lsbdistcodename in ['xenial', 'beaver'] {
