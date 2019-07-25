@@ -6,7 +6,7 @@ class exhibitor::config(
 
   $merged_properties = merge($exhibitor::params::properties, $properties)
 
-  if $lsbdistcodename in ['xenial', 'beaver'] {
+  if $lsbdistcodename in ['xenial', 'beaver', 'bionic' ] {
 
     file { '/etc/systemd/system/exhibitor.service.d':
       ensure => 'directory',

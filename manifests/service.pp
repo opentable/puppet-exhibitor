@@ -3,7 +3,7 @@ class exhibitor::service(
   $config_dir = $exhibitor::config_dir
 ) {
 
-  if $lsbdistcodename in ['xenial', 'beaver'] {
+  if $lsbdistcodename in ['xenial', 'beaver', 'bionic' ] {
 
     file { '/etc/systemd/system/exhibitor.service':
       ensure => 'present',
