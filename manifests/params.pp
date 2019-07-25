@@ -1,5 +1,5 @@
 class exhibitor::params {
-  $version = '1.5.2'
+  $version = '1.5.6'
 
   $install_dir = '/opt/exhibitor'
   $install_source = "http://search.maven.org/remotecontent?filepath=com/netflix/exhibitor/exhibitor-standalone/${version}"

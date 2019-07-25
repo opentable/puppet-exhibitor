@@ -2,7 +2,7 @@ class exhibitor::service(
   $install_dir = $exhibitor::install_dir,
 ) {
 
-  if $lsbdistcodename in ['xenial', 'beaver'] {
+  if $lsbdistcodename in ['xenial', 'beaver', 'bionic' ] {
 
     file { '/etc/systemd/system/exhibitor.service':
       ensure => 'present',
